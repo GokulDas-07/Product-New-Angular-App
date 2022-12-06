@@ -3,17 +3,17 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data">
                     <div class="card" >
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item">productid</li>
-                          <li class="list-group-item">productname</li>
-                          <li class="list-group-item">manufacture</li>
-                          <li class="list-group-item">expiry</li>
-                          <li class="list-group-item">brand</li>
-                          <li class="list-group-item">price</li>
-                          <li class="list-group-item">seller</li>
-                          <li class="list-group-item">distributor</li>
+                          <li class="list-group-item">ProductId: {{i.productid}}</li>
+                          <li class="list-group-item">Name: {{i.productname}}</li>
+                          <li class="list-group-item">Manufacture: {{i.manufacture}}</li>
+                          <li class="list-group-item">Expiry: {{i.expiry}}</li>
+                          <li class="list-group-item">Brand: {{i.brand}}</li>
+                          <li class="list-group-item">Price: {{i.price}}</li>
+                          <li class="list-group-item">Seller: {{i.seller}}</li>
+                          <li class="list-group-item">Distributor: {{i.distributor}}</li>
                         </ul>
                       </div>
                 </div>
