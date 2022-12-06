@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddProductComponent } from './add-product/add-product.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { ViewProductComponent } from './view-product/view-product.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     AddProductComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,
